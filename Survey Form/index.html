@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey, thank you in advance. :)</p>
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter your age" required>
+        </div>
+        <div>
+            <label for="dropdown">How satisfied are you with our product?</label>
+            <select id="dropdown" name="satisfaction" required>
+                <option value="">Select an option</option>
+                <option value="1">Very satisfied</option>
+                <option value="2">Satisfied</option>
+                <option value="3">Neutral</option>
+                <option value="4">Dissatisfied</option>
+                <option value="5">Very dissatisfied</option>
+            </select>
+        </div>
+        <div>
+            <label>How likely are you to recommend the product to someone you know?</label><br>
+            <input type="radio" id="definitely" name="recommend" value="definitely" checked>
+            <label for="definitely">Definitely</label><br>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" id="not-sure" name="recommend" value="not-sure">
+            <label for="not-sure">Not sure</label>
+        </div>
+        <div>
+            <label>What would you like to get news about in the future? (Check all that apply)</label><br>
+            <input type="checkbox" id="new-features" name="interests" value="new-features">
+            <label for="new-features">New Features</label><br>
+            <input type="checkbox" id="discounts" name="interests" value="discounts">
+            <label for="discounts">Discounts</label><br>
+            <input type="checkbox" id="events" name="interests" value="events">
+            <label for="events">Events</label><br>
+            <input type="checkbox" id="newsletters" name="interests" value="newsletters">
+            <label for="newsletters">Newsletters</label><br>
+            <input type="checkbox" id="beta-testing" name="interests" value="beta-testing">
+            <label for="beta-testing">Beta Testing</label>
+        </div>
+        <div>
+            <label for="comments">Any comments? (Optional)</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

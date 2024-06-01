@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Documentation</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Getting_Started" class="nav-link">Getting Started</a>
+      <a href="#Basic_Concepts" class="nav-link">Basic Concepts</a>
+      <a href="#Advanced_Topics" class="nav-link">Advanced Topics</a>
+      <a href="#API_Reference" class="nav-link">API Reference</a>
+      <a href="#References" class="nav-link">References</a>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>CSS (Cascading Style Sheets) is a language used to describe the presentation of a document written in HTML.</p>
+        <p>CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        <ul>
+          <li>CSS stands for Cascading Style Sheets</li>
+          <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+        </ul>
+      </section>
+      <section id="Getting_Started" class="main-section">
+        <header>Getting Started</header>
+        <p>To start using CSS, you need to create a CSS file and link it to your HTML file.</p>
+        <p>Here is an example of how to link a CSS file to an HTML file:</p>
+        <code>link rel="stylesheet" href="styles.css"</code>
+        <ul>
+          <li>Create a CSS file with a .css extension</li>
+          <li>Link the CSS file in the head section of your HTML file using a link element.</li>
+        </ul>
+      </section>
+      <section id="Basic_Concepts" class="main-section">
+        <header>Basic Concepts</header>
+        <p>CSS consists of selectors and declarations. Selectors are used to select the elements you want to style.</p>
+        <p>Declarations are used to specify the styles for the selected elements. A declaration consists of a property and a value.</p>
+        <code>selector { property: value; }
+        </code>
+        <ul>
+          <li><b>Selectors:</b> Used to select HTML elements.</li>
+          <li><b>Properties:</b> Used to define what aspect of the element you want to style (e.g., color, font-size).</li>
+          <li><b>Values:</b> Used to specify the value of the property (e.g., red, 16px).</li>
+        </ul>
+      </section>
+      <section id="Advanced_Topics" class="main-section">
+        <header>Advanced Topics</header>
+        <p>Advanced CSS topics include animations, transitions, and responsive design.</p>
+        <p>Using media queries, you can create a responsive design that adapts to different screen sizes.</p>
+        <pre><code>@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}</code></pre>
+        <ul>
+          <li><b>Animations:</b> Create complex animations using @keyframes.</li>
+          <li><b>Transitions:</b> Smoothly transition from one style to another.</li>
+          <li><b>Media Queries:</b> Apply different styles for different devices or screen sizes.</li>
+        </ul>
+      </section>
+      <section id="API_Reference" class="main-section">
+        <header>API Reference</header>
+        <p>Here are some commonly used CSS properties:</p>
+        <p><b>color:</b> Sets the color of the text.</p>
+        <code>
+          p { color: blue; }
+        </code>
+        <p><b>background-color:</b> Sets the background color of an element.</p>
+        <code>
+          div { background-color: yellow; }
+        </code>
+        <ul>
+          <li><b>font-size:</b> Sets the size of the font.</li>
+          <li><b>margin:</b> Sets the margin outside an element.</li>
+          <li><b>padding:</b> Sets the padding inside an element.</li>
+        </ul>
+      </section>
+      <section id="References" class="main-section">
+        <header>References</header>
+        <p>Here are some useful resources for learning more about CSS:<p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN WWeb Docs: CSS</a> - Comprehensive resources for CSS documentation and tutorials.</li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools: CSS</a> - Tutorials and references for CSS.</li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS-Tricks</a> - Tips, tricks, and techniques on using CSS.</li>
+            <li><a href="https://caniuse.com" target="_blank">Can I use</a> - Up-to-date browser support tables for front-end web technologies.</li>
+            <li><a href="https://www.smashingmagazine.com/category/css" target="_blank">Smashing Magazine: CSS</a> - Articles and tutorials on advanced CSS topics.</li>
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>
